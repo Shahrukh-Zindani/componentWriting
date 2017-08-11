@@ -17,6 +17,7 @@ class Example extends React.Component {
   }
 
   handleChange(date) {
+    console.log(date)
     this.setState({
       startDate: date,
     })
@@ -28,9 +29,10 @@ class Example extends React.Component {
       
         <div className = 'wrapper-datepicker'>
           <DatePicker
-            customInput={<TextField />}
+            customInput={<TextField style={{fontSize: '24px'}} onChange={this.handleChange}/>}
             {...this.props}
             selected={this.state.startDate}
+            onChange= {this.handleChange}
             showMonthDropdown
             showYearDropdown
             disabled={false}
