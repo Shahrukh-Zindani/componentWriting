@@ -4,6 +4,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 import moment from 'moment';  
 import Card from 'material-ui/Card';
 import './DatePicker.css';
+import TextField from 'material-ui/TextField'
 
 
 class Example extends React.Component {
@@ -27,10 +28,10 @@ class Example extends React.Component {
       
         <div className = 'wrapper-datepicker'>
           <DatePicker
-            
+            customInput={<TextField />}
             {...this.props}
             selected={this.state.startDate}
-            // onChange={this.handleChange}
+            onChange={this.handleChange}
             showMonthDropdown
             showYearDropdown
             disabled={false}
