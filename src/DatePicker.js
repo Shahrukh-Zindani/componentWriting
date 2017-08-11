@@ -31,7 +31,6 @@ class Example extends React.Component {
             customInput={<TextField />}
             {...this.props}
             selected={this.state.startDate}
-            onChange={this.handleChange}
             showMonthDropdown
             showYearDropdown
             disabled={false}

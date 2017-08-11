@@ -96,3 +96,7 @@
   color: #0d5db8;
 }
 
+.react-datepicker-popper {
+  transform: none;
+  position: inherit;
+}

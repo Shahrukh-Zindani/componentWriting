@@ -18,7 +18,7 @@ class App extends Component {
     return (
       <MuiThemeProvider>
         <div className="App" >
-        <Example onChange={this.handleChange}/>
+        <Example />
           
         </div>
       </MuiThemeProvider>
