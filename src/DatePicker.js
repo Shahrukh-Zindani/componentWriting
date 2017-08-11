@@ -5,9 +5,7 @@ import moment from 'moment';
 import Card from 'material-ui/Card';
 import './DatePicker.css';
 import TextField from 'material-ui/TextField'
-import { getFormatter, getCursorPositioner } from './formatter'
-const template = '**/**/****';
-export const formatPhoneNumberInput = getFormatter(template)
+
 
 class Example extends React.Component {
   constructor(props) {
@@ -31,7 +29,7 @@ class Example extends React.Component {
         e.target.value = e.target.value+'/';
       }
       this.setState({
-        startDate: moment(formatPhoneNumberInput(e.target.value)),
+        startDate: moment(e.target.value),
       })
     }
   }
